@@ -1,0 +1,100 @@
+body{
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#navBar{
+    color: black;
+    text-align: left;
+    display:flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+#borderBar{
+    border-top: 3px;
+    margin:0;
+    padding: 3px;
+}
+
+#navBarLink{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: "Kanit";
+    margin-top: 35px;
+}
+
+#AboutKam{
+    background-image: url("assets/slate.jpeg");
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 3px solid white;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    font-family: "Kanit";
+    color: white;
+    border-image-slice: 1;
+}
+
+.slideshow-container {
+    position: relative;
+    justify-content: center;    
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
+    border: 0;
+}
+
+.slide {
+    display: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-shadow: 
+        0 0 0 2px rgba(255, 255, 255, 0.6), 
+        0 0 0 4px rgba(255, 255, 255, 0.55), 
+        0 0 0 8px rgba(255, 255, 255, 0.5), 
+        0 0 0 10px rgba(255, 255, 255, 0.45),
+        0 0 0 12px rgba(255, 255, 255, 0.4), 
+        0 0 0 14px rgba(255, 255, 255, 0.35), 
+        0 0 0 16px rgba(255, 255, 255, 0.3), 
+        0 0 0 18px rgba(255, 255, 255, 0.25); 
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from { opacity: .2; }
+    to { opacity: 1; }
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prev{
+    left: 20%;
+}
+
+#next{
+    right: 20%;
+}
