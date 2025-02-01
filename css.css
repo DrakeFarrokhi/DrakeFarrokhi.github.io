@@ -19,15 +19,18 @@ html, body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
     background-image: url("/assets/brick.png");
     background-size: 100% auto;
     background-repeat: repeat-y;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 0 0;
 }
 .NavigationBar{
     display: flex;
-    background-image: url("assets/mantel1.png");
+    background-image: url("/assets/mantel1.png");
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
@@ -35,27 +38,39 @@ html, body{
     color: white;
     border-bottom: 3px solid black; /* Add a 2px solid black border to the bottom */
 }
-.LeftBodyChild{
-    border: 5px black;
-    justify-content: left;
-    text-align: left;
-    padding: 10px;
-}
-.RightBodyChild{
-    border: 5px black;
-    justify-content: right;
-    text-align: right;
-    padding: 10px;
-}
 img {
-    width: 30%;
+    width: 50%;
+    max-width: 100%;   /* Ensures images resize to fit their container */
+    height: 90%;      /* Keeps the aspect ratio of images */
+    padding: 2% 5%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    justify-content: center;
+}
+.Text{
+    border: 10px black;
+}
+.slideshowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.contactInfo{
+    width: 50%;
     max-width: 100%;   /* Ensures images resize to fit their container */
     height: auto;      /* Keeps the aspect ratio of images */
     padding: 2% 5%;
     border: 1px solid black;
     border-radius: 4px;
     padding: 5px;
-}
-.Text{
-    border: 10px black;
+    justify-content: center;
 }
