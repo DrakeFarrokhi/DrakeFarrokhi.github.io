@@ -30,13 +30,14 @@ html, body{
 }
 .NavigationBar{
     display: flex;
-    background-image: url("/assets/mantel1.png");
+    background-image: url("/assets/mantel.png");
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border-bottom: 3px solid black; /* Add a 2px solid black border to the bottom */
+    max-height: 10%;
 }
 img {
     width: 50%;
@@ -73,4 +74,31 @@ img {
     border-radius: 4px;
     padding: 5px;
     justify-content: center;
+    background: linear-gradient(to bottom, slategray, black);
+    color: white;
+}
+.logo{
+    padding: 0;
+    border: none;
+    display: flex;
+    max-width: 35%;
+}
+.contactLink{
+    color: white;
+    font-size: inherits;
+}
+.reviews{
+    width: 50%;
+    max-width: 100%;   /* Ensures images resize to fit their container */
+    height: auto;      /* Keeps the aspect ratio of images */
+    padding: 2% 5%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    justify-content: center;
+    background: linear-gradient(to bottom, slategray, black);
+    color: white;
+}
+ul{
+    padding-left: 20px;
 }
