@@ -4,8 +4,12 @@
  Functionality: Home Page, contact, reviews-->
  <!--Things To Do:
  1. Image Borders
- 2. Reviews page & Contacts Page
- 3. Dynamic Screen for Mobile & tablet
+ 2. Dynamic Screen for Mobile & tablet
+ 3. Add metal background like look to slideshow
+ 4. add plants and firepockers/logs by fireplace
+ 5. add lower shelf and put like a little wooden sign for the contact
+ 6. Make contacts an about/contact and have two columns, one for the about and one with quick access to contact info
+ 7. stagger the reviews and let them all have their own little box with an image
 -->
 
 <!DOCTYPE html>
@@ -19,21 +23,28 @@
 </head>
 <body>
     <div class="NavigationBar">
-        <img class="logo" src="assets/logo2.png.png" alt="BH Fireplace Logo">
+        <img class="logo" src="assets/logo.png" alt="BH Fireplace Logo">
         <a href="index.html">Home</a>
         <a href="reviews.html">Reviews</a>
         <a href="contact.html">Contact</a>
     </div>
-    <div class="Body">
+    <div class="indexContent">
+
+        <img src="assets/plant.png" class="plant" alt="Tall Plant">
+
         <img class="slideshowImage" src="assets/fireplace1.png" alt="Electric Fireplace">
         <img class="slideshowImage" src="assets/fireplace2.png" alt="Electric Fireplace">
         <img class="slideshowImage" src="assets/fireplace3.png" alt="Electric Fireplace">
         <img class="slideshowImage" src="assets/fireplace4.png" alt="Electric Fireplace">
         <img class="slideshowImage" src="assets/fireplace5.png" alt="Electric Fireplace">
         <img class="slideshowImage" src="assets/fireplace6.png" alt="Electric Fireplace">
-        <footer class="contactFootnote">
-            <h1 class="contactFootnote">Interested in our work? Find out how to <a href="contact.html" style="color:black">contact us!</a></h1>
-        </footer>
+        
+        <img src="assets/sign.png" class="clickableImg" alt="Wooden Contact Us Sign" id="sign">
+        
     </div>
+    
+    <div class="hearthTop"></div>
+    <div class="hearthBottom"></div>
+
 </body>
 </html>
