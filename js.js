@@ -4,9 +4,6 @@ var rotateSlides;
 document.addEventListener("DOMContentLoaded", function () {
     rotateImages();
     showSlide(slideIndex);
-    document.getElementById("sign").addEventListener("click", function(){
-        window.location.href = "contact.html";
-    });
 });
 
 function showSlide(n){
